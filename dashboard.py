@@ -360,7 +360,18 @@ def update_country_renewable_vs_nonrenewable_chart(selected_countries):
 def update_total_histogram(selected_year, selected_sources):
     filtered_df = df[df['Year'] == selected_year]
 
-    # On crée un dictionnaire pour stocker la production totale de chaque pays par source
+    if not selected_sources:  # Aucune case n'est cochée
+        # Vous pouvez retourner un message ou un graphique vide ici
+        return {
+            'data': [],
+            'layout': {
+                'title': 'Aucune source sélectionnée',
+                'xaxis': {'title': 'Pays'},
+                'yaxis': {'title': 'Production (TWh)'}
+            }
+        }
+
+    # Le reste de votre code pour traiter les données si des cases sont cochées
     total_production_by_country = {}
 
     for source in selected_sources:
