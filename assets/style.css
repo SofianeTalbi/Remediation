@@ -1,0 +1,13 @@
+.custom-dropdown .Select-value {
+  background: rgba(0, 0, 0, 0.7); /* Noir avec une transparence de 0.8 pour l'effet verre */
+  border-color: #1c2e30;          /* Bordure en vert plus sombre */
+  color: #ffffff;                 /* Texte en blanc */
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+  
