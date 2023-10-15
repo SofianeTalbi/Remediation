@@ -5,13 +5,14 @@ Contexte
 
 Dans le cadre de mon rattrapage, il m'a été demandé de construire un dashboard dynamique permettant de présenter la diversité des solutions de production électrique des principaux pays européens (+UK) au cours des 10 dernières années dans l'environnement Python + Dash/Plotly.
 
-Mon application devait récupérer des données open sources que l'on peut trouver sur le web. Mon dashboard devait afficher les données de façon optimale avec la mise en place de graphiques, de cartes etc.J'ai pris l'initiative également de fournir une documentation technique et fonctionnelle (voir ci dessous).
+Mon application devait récupérer des données open sources que l'on peut trouver sur le web. Mon dashboard devait afficher les données de façon optimale avec la mise en place de graphiques, de cartes etc. J'ai pris l'initiative également de fournir une documentation technique et fonctionnelle (voir ci dessous).
 
 C’est donc ce que j'ai fait. J'ai récupéré mes données sur Kaggle à l'adresse https://www.kaggle.com/datasets/prateekmaj21/electricity-production-by-source-world/data. Ainsi, sur mon dashboard, vous pouvez visualiser les données à travers les graphiques en naviguant sur mon application.
 
-Concernant la source de donnée, Les données proviennent de "Our World in Data". Ces données sont compilées par Our World in Data à partir de deux sources principales :
+Concernant la source de donnée, les données proviennent de "Our World in Data". Ces données sont compilées par Our World in Data à partir de deux sources principales :
 - BP Statistical Review of World Energy : https://www.bp.com/en/global/corporate/energy-economics/statistical-review-of-world-energy.html
 - Ember : https://ember-climate.org/data/
+  
 Le fichier csv présente la production électrique des pays dans le monde par source en fonction des années et possède 11 colonnes et 6242 lignes:
 - "Entity" (Nom du pays)
 - "Code" (Code du pays)
@@ -92,7 +93,7 @@ Ce que l'on sait maintenant:
 
 1. **Production Électrique Par Source et Par Année** : Les graphiques montrent comment la production électrique varie au fil des années pour différentes sources d'énergie selon les pays. On peut voir que certains pays produisent bien plus d'électricité que d'autre. Par exemple l'Allemagne produit une bien plus grande quantité d'électricité en TWh que le Portugal.
 
-2. **Répartition de la Production d'Électricité par Source** : Ces graphiques en camembert permettent de visualiser la répartition de la production d'électricité pour une source et pour une année donnée. On peut observer comment les pays européens répartissent leur production entre les différentes sources, montrant ainsi la diversité ou la prédominance de certaines sources. Par exemple, l'allemagne et la Pologne sont des grands producteurs d'électricité à partir du charbon. Chaque année, ils représentent à eux deux 50% de la production électrique total via charbon.
+2. **Répartition de la Production d'Électricité par Source** : Ces graphiques en camembert permettent de visualiser la répartition de la production d'électricité pour une source et pour une année donnée. On peut observer comment les pays européens répartissent leur production entre les différentes sources, montrant ainsi la diversité ou la prédominance de certaines sources. Par exemple, l'Allemagne et la Pologne sont des grands producteurs d'électricité à partir du charbon. Chaque année, ils représentent à eux deux 50% de la production électrique total via charbon.
 
 3. **Évolution de la Production par Source** : Les graphiques en ligne montrent comment la production d'une source d'énergie particulière a évolué de 2010 à 2020. Cela permet de voir si certains pays ont augmenté ou réduit leur dépendance à une source d'énergie spécifique. Par exemple, on peut voir que l'Italie voit sa production d'électricité via l'énergie solaire en constante augmentation depuis les années 2010.
 
